@@ -1,0 +1,21 @@
+@import 'variables';
+
+.button {
+	display: revert;
+	background-color: $orange;
+	border-radius: 20px;
+	margin-left: 1rem;
+	padding: 10px 20px;
+	min-width: 100px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid transparent;
+
+	&,
+	span {
+		color: #fff;
+	}
+	large {
+		font-size: 1.25rem;
+	}
+}
