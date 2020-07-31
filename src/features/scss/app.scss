@@ -1,0 +1,80 @@
+@import 'fonts';
+@import 'variables';
+@import 'libs/normalize';
+
+@import 'components/all';
+
+body {
+	background: linear-gradient(-45deg, #91aee5, #b3b3b6);
+}
+.app {
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+}
+
+.container {
+	.row {
+		max-width: 60rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.marketing-hero .hero-main-header {
+		color: #fefefe;
+		font-size: 2.875rem;
+		font-weight: 200;
+		margin: 0;
+		text-align: center;
+	}
+
+	.marketing-hero .hero-subheader {
+		color: #fefefe;
+		font-family: 'Avenir', Helvetica, Arial, sans-serif;
+		font-size: 1.3125rem;
+		font-weight: 200;
+	}
+
+	.marketing-hero.home-large-hero {
+		background: url('https://get.foundation/assets/img/home-bg-small-02.svg') bottom center;
+		background-size: cover;
+	}
+	@media print, screen and (min-width: 43.75em) {
+		.marketing-hero.home-large-hero {
+			background: url('https://get.foundation/assets/img/home-bg-01.svg') bottom center;
+			background-position: center;
+			background-size: cover;
+			padding-bottom: 250px;
+			padding-top: 180px;
+		}
+	}
+
+	.homepage {
+		text-align: left !important;
+	}
+	.homepage .hero-main-header {
+		text-align: left !important;
+	}
+
+	h1 {
+		margin: 15px 10px;
+		font-family: 'Lucida Console', monospace;
+		font-size: 40px;
+		color: white;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		line-height: 1.4;
+		margin-top: 0;
+		margin-bottom: 0.5rem;
+	}
+
+	// &__button-gray {
+	// 	padding: 15px 10px 14px;
+	// 	width: 30px;
+	// 	font-size: 18px;
+	// }
+}
